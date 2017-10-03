@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            
+            h1 {
+                display: block;
+                font-family: verdana;
+                margin-top: 0.67em;
+                margin-bottom: 0.67em;
+                margin-left: 0;
+                margin-right: 0; 
+                text-align: center;
+            }
+
+            table {
+                background: lightblue;
+                padding: 5px;
+                text-align: left;
+                border-bottom: 2px solid white;
+                border-spacing: .5rem;
+                border-color: red;   
+                font-family: verdana;
+            }
+
+            div {
+                background: #ddd;
+                display: inline-block;
+            }
+
+
+        </style>
+
+
+    </head>
+    <body>
+    <div>
+    <h1>Signup</h1>
+        <table>
+            <tr>
+                <td>
+                    <form method="POST">
+                    <label for="username">Username</label>
+                </td>
+                <td>
+                    <input id="username" type="text" name="userfield" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form method="POST">
+                    <label for="password">Password</label>
+                </td>
+                <td>
+                    <input id="password" type="password" name="passwordfield" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form method="POST">
+                    <label for="vpassword">Verify Password</label>
+                </td>
+                <td>
+                    <input id="vpassword" type="password" name="vpasswordfield" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form method="POST">
+                    <label for="email">Email (optional)</label>
+                </td>
+                <td>    
+                    <input id="email" type="text" name="emailfield" value="" />
+                </td>
+            </tr>
+        </table>
+
+                    <input type="submit" />
+                    </form>
+
+
+
+    </div>
+    </body>
+</html>
