@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href='https://fonts.googleapis.com/css?family=Rock Salt' rel='stylesheet'>        
+        <style>
+
+            body {
+                background: #80a2d641;
+            }
+
+            h2 {
+                font-family: 'Rock Salt';font-size: 22px;
+                text-align: center;
+            }
+
+            .parent {
+                display: flex;
+                font-family: verdana;
+                flex-direction: column;
+            }
+
+            .item {
+                align-items: center;            
+                height: auto;
+                color: black;
+                text-align: center;
+                font-weight: 600;
+            }
+
+            .error { color: rgb(202, 0, 0);
+                font-size: 10px; 
+            }
+
+            .submit {
+                padding: 5px 15px; 
+                background: #ccc; 
+                border: 0 none;
+                cursor: pointer;
+                border-radius: 5px;
+                font-size: 12px;
+                font-weight: 500;
+            }
+
+        </style>
+    </head>
+    <body>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
