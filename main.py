@@ -41,7 +41,10 @@ def validate_user():
     if email != '' and len(email) < 3 or len(email) > 20:
         email_error = 'Email too short/long'
     
-    elif email != '' and ("@" not in email) or ("." not in email):
+    elif email != '' and ("@" not in email) or ("." not in email) or (' ' in email):
+        email_error = 'Please enter a valid email'
+
+    elif email.count("@") != 1 or email.count(".") != 1:
         email_error = 'Please enter a valid email'
 
     if not username_error and not password_error and not verify_error and not email_error:
